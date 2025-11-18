@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+     <link rel="stylesheet" href="main.css">
+     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <style>
+        html{scroll-behavior: smooth;}
+
+        #maindiv{
+            font-family:'Times New Roman', Times, serif;
+        }
+
+        .lokesh{
+            text-shadow: 1px 1px 2px gray;
+        }
+
+        .myphotoanime{
+            animation-name: photoanime;
+            animation-duration: 2.5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-direction: alternate;
+        }
+        @keyframes photoanime{
+            from{
+                scale: 1;
+            }
+            to{
+                scale: 1.05;
+            }
+        }
+
+        .blob{
+            animation-name: blobanime;
+            animation-duration: 1.6s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-direction: alternate;
+        }
+        @keyframes blobanime{
+            from{
+                left: 28%;
+                top: 31%;
+            }
+            to{
+                left: 31%;
+                top: 28%;
+            }
+        }
+    </style>
+
+<div class="m-0 p-0" id="maindiv">
+        <!-- navbar -->
+    <nav class="relative bg-gray-100 shadow-md shadow-gray-200 group" id="home">
+        <div class="w-[45px] h-[2px] bg-gray-700 absolute right-[3%] top-[50%] border-white 
+            group-hover:rotate-[270deg] group-hover:bg-blue-700 group-hover:w-[30px] transition-all duration-1000"></div>
+
+        <div class="relative flex justify-between max-w-[1100px] mx-auto items-center py-2 text-gray-700">
+            <div class="flex items-center">
+                <a href="/" class="font-extrabold text-[36px] lokesh">"Lokesh.</a>
+            </div>
+
+            <ul class="flex space-x-8 text-[16.5px] cursor-pointer font-extrabold">
+                <li class="text-blue-800 hover:text-blue-600 transition-all duration-200"><a href="#home">Home</a></li>
+                <li class="hover:text-gray-500 transition-all duration-200"><a href="#about">About</a></li>
+                <li class="hover:text-gray-500 transition-all duration-200"><a href="#skills">Skills</a></li>
+                <li class="hover:text-gray-500 transition-all duration-200"><a href="#projects">Projects</a></li>
+                <li class="hover:text-gray-500 transition-all duration-200"><a href="#contectme">Contect Me</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+     <section class="bg-gray-100 pt-[110px] pb-[140px] shadow-md shadow-gray-100">
+        <!-- content -->
+        <div class="max-w-[660px] text-gray-700 mx-auto">
+            <h2 class="text-[60px] font-extrabold text-gray-600 ">Hi!</h2>
+            <h2 class="text-[80px] font-extrabold">I'm Lokesh Kumar</h2>
+            <h2 class="text-[45px] font-extralight font-sans"><span class="role"></span></h2>
+
+            <div class="relative flex">
+                <button class="bg-blue-900 h-12 w-44 text-white font-semibold text-[18px] mt-8 shadow-md shadow-gray-500 rounded-full
+                 hover:bg-gray-100 hover:text-gray-600 hover:scale-105 transition-all duration-200">Get my Resume</button>
+            </div>    
+        </div>
+     </section>
+
+     <!-- about section -->
+      <section id="about">
+        <!-- content -->
+        <div class="flex max-w-[1200px] mx-auto pt-[140px] justify-between">
+            <!-- left side content -->
+             <div class="flex flex-col space-y-4 justify-center max-w-[700px] text-gray-500 text-[18px]">
+                <h2 class="text-blue-900 text-[50px] font-semibold mb-[-15px]"><span class="text-[90px]">A</span>bout me</h2>
+
+                <p>I'm Lokesh Kumar, a 23-year-old tech enthusiast who began my academic journey in the vibrant city of Jaipur, Rajasthan. 
+                   There, I earned my Bachelor's in Computer Applications (BCA) from 
+                   <a href="https://www.subodhpgcollege.com/" target="_blank" class="text-blue-900 font-semibold"><u>SS Jain Subodh College</u></a> in Jaipur.</p>
+
+                <p>Now, I've taken my quest for knowledge to the next level by pursuing a Master's in Computer Applications (MCA) at 
+                    <a href="https://vitbhopal.ac.in/" target="_blank" class="text-blue-900 font-semibold"><u>Vellore Institute of Technology (VIT)</u></a> in Bhopal.</p>   
+                
+                <p>My journey reflects a seamless blend of heritage from the Pink City to the innovative vibes of the City of Lakes.</p>
+             </div>
+
+            <!-- right side content -->
+            <div>
+                <div class="flex w-[362px] h-[400px] bg-white items-center justify-center border-[1px] border-gray-100 
+                            shadow-xl shadow-gray-400 rounded-xl transition duration-200">
+                    <img src="images/my_image.jpg" class="w-[290px] h-[325px] shadow-md shadow-gray-500 rounded-lg myphotoanime">
+                </div>
+            </div>
+        </div>
+      </section>
+
+     <!-- skills section -->
+      <section id="skills">
+        <div class="relative flex max-w-[1200px] mx-auto justify-between pt-[30px] mt-[130px]">
+            <!-- left side -->
+             <div class="flex flex-col justify-center max-w-[600px] text-[18px] text-gray-500">
+                <h2 class="text-[50px] text-blue-900 font-semibold"><span class="text-[90px]">S</span>kills & Expertise</h2>
+
+                <h2 class="font-semibold text-[24px]">Innovative Design</h2>
+                <p>Combining HTML, CSS, and Tailwind CSS, I create visually stunning, responsive, and efficient web pages.</p>
+
+                <h2 class="font-semibold text-[24px] mt-1">Dynamic Interactivity</h2>
+                <p>With JavaScript and React, I build engaging, highly interactive web applications.</p>
+
+                <h2 class="font-semibold text-[24px] mt-1">Efficient Collaboration</h2>
+                <p>Basic knowledge in Git and GitHub, I ensure clean, well-documented code and seamless teamwork.</p>
+
+                <h2 class="font-semibold text-[24px] mt-1">Continuous Learning</h2>
+                <p>I stay ahead of web development trends, driven by a passion for learning and delivering top-quality results.</p>
+             </div>
+
+             <!-- right side -->
+            <div class="relative group">
+                <img src="images/blob_vector.png" class="absolute -z-10 w-[250px] right-[35%] top-[38%] blob transition-all duration-1000">
+
+              <div class="grid grid-cols-3 gap-12 p-20">
+                <img src="images/html_image.png" class="w-[110px] hover:scale-105 transition-all duration-200">
+                <img src="images/css_image.png" class="w-[110px] hover:scale-105 transition-all duration-200">
+                <img src="images/tailwind_image.png" class="w-[110px] hover:scale-105 transition-all duration-200">
+                <img src="images/javascript_image.svg" class="w-[110px] hover:scale-105 transition-all duration-200">
+                <img src="images/git_image.svg" class="w-[110px] hover:scale-105 transition-all duration-200">
+                <img src="images/github_image.svg" class="w-[110px] hover:scale-105 transition-all duration-200">
+                <img src="images/react_image.png" class="w-[110px] hover:scale-105 transition-all duration-200">
+              </div>
+            </div>
+        </div>
+      </section>
+
+      <!-- project section -->
+       <section id="projects">
+        <h2 class="text-gray-200 text-[100px] font-bold mb-[-33px] mt-[50px]">PROJECTS</h2>
+        <div class="relative flex justify-center pt-14 bg-gray-200 pb-[200px]">
+           
+            <!-- razorpay clone project card -->
+            <div class="relative group">
+
+                <!-- razorpay clone project details -->
+                <div class="absolute p-24 pr-96 bg-black bg-opacity-50 opacity-0 hover:opacity-100 z-10 transition-all duration-500">
+                    <div class="flex gap-4">
+                        <img src="images/html_image.png" class="w-14">
+                        <img src="images/css_image.png" class="w-14">
+                        <img src="images/tailwind_image.png" class="w-14">
+                    </div>
+                    <div class="text-white">
+                        <h2 class="text-[50px] font-semibold">Razorpay Clone</h2>
+                        <p class="text-[18px]">Razorpay company offers a comprehensive suite of payment solutions, from payment gateway services to processing transactions and settling funds.</p>
+                        <button class="bg-orange-800 text-[18px] font-semibold h-10 w-24 rounded-full mt-3 shadow-md shadow-gray-800 
+                                hover:scale-105 hover:bg-orange-700 hover:text-gray-400 transition-all duration-200">Visit</button>
+                    </div>
+                </div>
+
+                <img src="images/razorpay-clone_image.png" 
+                     class="w-[950px] shadow-2xl shadow-gray-800 group-[]: group-hover:blur-sm transition-all duration-500">
+            </div>
+        </div>
+       </section>
+
+       <!-- Contect me section -->     
+        <section class="bg-gray-200" id="contectme">
+            <!-- content -->
+            <div class="max-w-[1200px] mx-auto pb-10">
+                <h2 class="text-gray-600 text-[90px] font-bold mb-[-30.2px]">Contect me</h2>
+                <h2 class="text-gray-500 text-[45px] font-semibold">Questions, Thoughts, Or Just Want To Say Hello?</h2>
+
+                <!-- form -->
+                <form class="max-w-[900px] mx-auto flex flex-col space-y-6 mt-10">
+                    <input type="text" name="name" placeholder="Enter your name" 
+                           class="h-10 px-7 rounded-lg shadow-md shadow-gray-500 border border-gray-300 placeholder:text-[20px]">
+
+                    <input type="email" name="email" placeholder="Enter your email address" 
+                           class="h-10 px-7 rounded-lg shadow-md shadow-gray-500 border border-gray-300 placeholder:text-[20px]">
+
+                    <input type="text" name="subject" placeholder="Enter your subject" 
+                           class="h-10 px-7 rounded-lg shadow-md shadow-gray-500 border border-gray-300 placeholder:text-[20px]">
+
+                    <textarea name="message" placeholder="Enter your message..." 
+                           class="h-52 px-7 rounded-lg shadow-md shadow-gray-500 border border-gray-300 placeholder:text-[20px] pt-3"></textarea>
+                    
+                    <div>
+                        <button class="bg-blue-900 text-white text-[22px] h-12 w-52 rounded-full mt-6 shadow-lg shadow-gray-500
+                                       hover:text-gray-700 hover:bg-white hover:scale-105 transition-all duration-200">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- footer -->
+         <footer class="bg-blue-950">
+            <div class="max-w-[1200px] mx-auto flex justify-between p-8">
+
+                <!-- left side -->
+                <div class=" text-gray-100">
+                    <h2 class="text-[26px]">Site Links...</h2>
+                    <ul class="space-y-1 mt-1">
+                       <li class="hover:text-gray-300 cursor-pointer"><a href="#home">Home</a></li>
+                       <li class="hover:text-gray-300 cursor-pointer"><a href="#about">About</a></li>
+                       <li class="hover:text-gray-300 cursor-pointer"><a href="#skills">Skills</a></li>
+                       <li class="hover:text-gray-300 cursor-pointer"><a href="#projects">Projects</a></li>
+                       <li class="hover:text-gray-300 cursor-pointer"><a href="#contectme">Contect Me</a></li>
+                    </ul>
+                   </div>
+
+                <!-- mid side -->
+                <div class="text-gray-100">
+                    <h2 class="text-[26px]">Contect Info...</h2>
+                    <h2 class="mt-3">Email : abcdefghijkl@gmail.com</h2>
+                    <h2 class="mt-1">Mobile : 0000000000</h2>
+                    <h2 class="mt-1">Address : Jaipur, Rajasthan (India)</h2>
+                </div>
+
+                
+
+                <!-- right side -->
+                 <div class="flex items-center gap-3">
+                    <a href="https://www.linkedin.com/in/kush666" target="_blank">
+                            <img src="images/linkedin_logo.png" class="w-10 hover:scale-105 transition duration-200"></a>
+
+                    <a href="https://github.com/lokesh1kush" target="_blank">
+                            <img src="images/github_logo.png" class="w-9 hover:scale-105 transition duration-200"></a>
+
+                    <a href="https://x.com/kusssh666" target="_blank">
+                            <img src="images/twitter_logo.png" class="w-9 hover:scale-105 transition duration-200"></a>
+
+                    <a href="https://www.instagram.com/kusssh666" target="_blank">
+                            <img src="images/instagram_logo.png" class="w-8 hover:scale-105 transition duration-200"></a>
+
+                    <a href="mailto:imlokeshji@gmail.com" target="_blank">
+                            <img src="images/email_logo.png" class="w-12 hover:scale-105 transition duration-200"></a>
+                 </div>
+            </div>
+            
+         </footer>
+
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+    <script>
+        var typeData = new Typed(".role", {
+      strings: [
+        "FRONTEND DEVELOPER",
+        "SOFTWARE DEVELOPER",
+        "WEB DEVELOPER",
+        "CODER",
+      ],
+      loop: true,
+      typeSpeed: 100,
+      backSpeed: 80,
+      backDelay: 1000,
+    });
+    </script>
+</body>
+</html>
