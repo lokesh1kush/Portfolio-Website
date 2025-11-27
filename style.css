@@ -1,0 +1,43 @@
+html{scroll-behavior: smooth;}
+
+        #maindiv{
+            font-family:'Times New Roman', Times, serif;
+        }
+
+        .lokesh{
+            text-shadow: 1px 1px 2px gray;
+        }
+
+        .myphotoanime{
+            animation-name: photoanime;
+            animation-duration: 2.5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-direction: alternate;
+        }
+        @keyframes photoanime{
+            from{
+                scale: 1;
+            }
+            to{
+                scale: 1.05;
+            }
+        }
+
+        .blob{
+            animation-name: blobanime;
+            animation-duration: 1.6s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-direction: alternate;
+        }
+        @keyframes blobanime{
+            from{
+                left: 28%;
+                top: 31%;
+            }
+            to{
+                left: 31%;
+                top: 28%;
+            }
+        }
